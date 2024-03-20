@@ -956,7 +956,7 @@ int bsm_hamiltonian_cd(double E, double rho, int cp_sign)
   {
     for (i=0; i < n_flavors; i++)
       for (j=0; j < n_flavors; j++)
-        _H[i][j] = conj(_H0_template[i][j] * inv_E   +  Ve*epsilon_m[i][j] +  a_v[i][j] - ftE * c_v[i][j]);
+        _H[i][j] = conj(_H0_template[i][j] * inv_E   +  Ve*epsilon_m[i][j] -  a_v[i][j] - ftE * c_v[i][j]);
                                                 // delta_CP -> -delta_CP
   }
 
